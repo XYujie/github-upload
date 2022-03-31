@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<SecuritySetting>
+  <SecurityVersion>1.00.00</SecurityVersion>
+  <ProductVersion>1.00.00</ProductVersion>
+  <IdentificationName displayName="Distinguished Name" value="IF tag OS Variation" />
+  <ReserveKey>
+    <setValue Name="_WIN_XP" value="5.1:1" />
+    <setValue Name="_WIN_2003" value="5.2:2" />
+    <setValue Name="_WIN_2003" value="5.2:3" append="1" />
+    <setValue Name="_WIN_2003R2" value="5.2:2" />
+    <setValue Name="_WIN_2003R2" value="5.2:3" append="1" />
+    <setValue Name="_WIN_VISTA" value="6.0:1" />
+    <setValue Name="_WIN_2008" value="6.0:2" />
+    <setValue Name="_WIN_2008" value="6.0:3" append="1" />
+    <setValue Name="_WIN_2008R2" value="6.1:2" />
+    <setValue Name="_WIN_2008R2" value="6.1:3" append="1" />
+    <setValue Name="_WIN_7" value="6.1:1" />
+    <setValue Name="_WIN_8" value="6.2:1" />
+    <setValue Name="_WIN_2012" value="6.2:2" />
+    <setValue Name="_WIN_2012" value="6.2:3" append="1" />
+    <setValue Name="_WIN_8.1" value="6.3:1" />
+    <setValue Name="_WIN_2012R2" value="6.3:2" />
+    <setValue Name="_WIN_2012R2" value="6.3:3" append="1" />
+    <setValue Name="_WIN_10" value="10.0:1" />
+    <setValue Name="_WIN_10_LTSB2015" value="10.0.10240:1" />
+    <setValue Name="_WIN_10_LTSB2016" value="10.0.14393:1" />
+    <setValue Name="_WIN_10_LTSC2019" value="10.0.17763:1" />
+    <setValue Name="_WIN_2016" value="10.0.14393:2" />
+    <setValue Name="_WIN_2016" value="10.0.14393:3" append="1" />
+    <setValue Name="_WIN_2019" value="10.0.17763:2" />
+    <setValue Name="_WIN_2019" value="10.0.17763:3" append="1" />
+    <setValue Name="_WIN_10_NCCOE" value="10.0.18363:1" />
+  </ReserveKey>
+  <Commands displayName="WIN_2019 Single" required="0" selected="1" reserveName="" keyName="" keyValue="" envVarFlag="" hidden="0">
+    <Explanation>Operator EQ</Explanation>
+    <Command cmd="set &gt; c:\temp\Win2019EQExecuted.txt" />
+  </Commands>
+  <Commands displayName="WIN_2016 Single" required="0" selected="1" reserveName="" keyName="" keyValue="" envVarFlag="" hidden="0">
+    <Explanation>Operator NE</Explanation>
+    <Command cmd="set &gt; c:\temp\Win2016NEExecuted.txt" />
+  </Commands>
+  <Commands displayName="WIN_2016 and WIN_2019" required="0" selected="1" reserveName="" keyName="" keyValue="" envVarFlag="" hidden="0">
+    <Explanation>Operation EQ</Explanation>
+    <Command cmd="set &gt; c:\temp\Win2016_and_2019EQExecuted.txt" />
+  </Commands>
+</SecuritySetting>
